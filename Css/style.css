@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main_div{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f6f6f6;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to bottom, rgb(245, 209, 218), white);
+}
+.music_container{
+    width: 23rem;
+    height: 35rem;
+    border: 2rem;
+    border-radius: 0.6rem;
+    background-color: #ffff;
+    box-shadow: 0 1.3rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
+    padding: 3rem;
+    text-align: center;
+}
+.music_container h1{
+    margin: 1rem 0 0rem 0;
+    font-size: 2rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.2);
+    letter-spacing: 0.2em;
+    font-family: 'Patua One', cursive;
+}
+.music_container h3{
+    margin-top: 0.5rem;
+    letter-spacing: 0.2rem;
+    font-size: 1.2rem;
+    color: #d4d3d3;
+}
+.music_image{
+    width: 15rem;
+    height: 15rem;
+    margin: 2rem 0 2.5rem 1rem;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 0.1rem;
+    border-radius: 50%;
+    box-shadow: 0 1.3rem 3rem 0.5rem rgba(0,0,0,0.1);
+}
+.music_controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 1.5em;
+}
+
+.music_controls .fas{
+    color: rgb(105, 103, 103);
+}
+
+.music_controls .main_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: rgb(61, 60, 60);
+    color: rgb(238, 221, 225);
+}
+
+.music_controls .fas:hover{
+    background-color: #a5a1a1;
+}
+.music_controls .main_button:hover{
+    background-color: #f6f6f6;
+    color: black;
+}
+/*to rotate the image*/
+.anime{
+    animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#progress_bar{
+    background: rgb(226, 225, 225);
+    width: 100%;
+    height: 0.4em;
+    cursor: pointer;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+}
+#progress{
+    background: rgb(233, 181, 194);
+    height: 0.4em;
+    width: 0%;
+    border-radius: 0.5em;
+    transition: width 0.1s linear;
+}
+
+@media screen and (max-width:790px){
+    .music_container{
+        width: 21em;
+        height: 33em;
+    }
+    .music_image{
+        width: 12em;
+        height: 12em;
+    }
+}
+
+@media screen and (max-width:770px){
+    .music_container{
+        width: 20em;
+        height: 32em;
+    }
+    .music_container h1{
+        font-size: 1.8em;
+        margin-top: 0.6em;
+    }
+    .music_container h3{
+        font-size: 1em;
+    }
+    .music_image{
+        width: 12rem;
+        height: 12rem;
+    }
+}
+
+@media screen and (max-width:430px){
+    .music_container{
+        width: 18em;
+        height: 30em;
+    }
+    .music_image{
+        width: 10em;
+        height: 10em;
+    }
+}
+
+@media screen and (max-width:330px){
+    .music_container{
+        width: 16em;
+        height: 28em;
+    }
+    .music_image{
+        width: 8em;
+        height: 8em;
+    }
+}
